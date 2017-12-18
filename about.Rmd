@@ -1,0 +1,27 @@
+---
+title: "About"
+author: "Roheet Narayanan"
+date: "December 18,2017"
+output: html_document
+---
+
+
+
+
+
+This Website  is a Data Analysis based on "Life Expectancy" and "Fertility Rate " for the Year 2013 and 1960.
+
+The Analysis contains datsets for 
+
+1.Country Name 
+
+2.Country Code 
+
+3.Region
+
+4.Life Expectancy
+
+5.Fertility Rate 
+
+
+

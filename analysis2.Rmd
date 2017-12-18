@@ -1,0 +1,62 @@
+---
+title: "Analysis of 1960"
+output: html_document
+---
+
+
+
+```{r plot2, echo=FALSE,results='hide',message=FALSE}
+
+
+
+
+Data<-read.csv("Dataset.csv")
+
+data1960<-Data[Data$Year==1960,]
+
+LE_data1960<-data.frame(Code=Country_Code,Life.Exp=Life_Expectancy_At_Birth_1960)
+
+
+
+merged1960<-merge(data1960,LE_data1960,by.x ="Country.Code",by.y = "Code")
+
+merged1960$Year<-NULL
+
+
+library(ggplot2)
+
+qplot(data=merged1960,x=Fertility.Rate,y=Life.Exp,color=Region,size=I(2),shape=I(17),alpha=I(0.6),main = "Life Expectancy Vs Fertility(1960)")
+
+colnames(merged1960)<-c("Counrty Code","Country Name","Region","Fertility Rate ","Life Expectancy")
+
+
+
+```
+
+
+
+##PLOT
+
+The Above shows a Visualizaton of  Quick Plot for  Life Expectancy Vs Fertility for the year 1960 from datasets containing data's for all countries.
+
+
+```{r table2 , echo=FALSE,message=FALSE}
+
+kable(merged1960[,],caption = "Knitr Table for the  year 1960")
+
+
+```
+
+
+
+
+
+
+
+
+
+##SUMMARY
+
+
+The Above is a Knitr Table  containing data based on "Life Expectancy vs Fertility Rate Analysis " for the Year 1960 for all countries.
+
