@@ -1,0 +1,14 @@
+name: "my-website"
+navbar:
+  title: "My Website"
+  left:
+    - text: "2013"
+      href: index.html
+    - text: "1960"
+      href: analysis2.html
+    - text: "About"
+      href: about.html
+output:
+  html_document:
+    theme: flatly
+    highlight: default
