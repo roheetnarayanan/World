@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Analysis of 2013</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">My Website</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">2013</a>
+</li>
+<li>
+  <a href="analysis2.html">1960</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Analysis of 2013</h1>
+
+</div>
+
+
+<p><img src="analysis2_files/figure-html/plot2-1.png" width="672" /></p>
+<div id="plot" class="section level2">
+<h2>PLOT</h2>
+<p>The Above shows a Visualizaton of Quick Plot for Life Expectancy Vs Fertility for the year 1960 from datasets containing data’s for all countries.</p>
+<table>
+<caption>Knitr Table for the year 1960</caption>
+<thead>
+<tr class="header">
+<th align="left">Counrty Code</th>
+<th align="left">Country Name</th>
+<th align="left">Region</th>
+<th align="center">Fertility Rate</th>
+<th align="right">Life Expectancy</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ABW</td>
+<td align="left">Aruba</td>
+<td align="left">The Americas</td>
+<td align="center">4.820</td>
+<td align="right">65.56937</td>
+</tr>
+<tr class="even">
+<td align="left">AFG</td>
+<td align="left">Afghanistan</td>
+<td align="left">Asia</td>
+<td align="center">7.450</td>
+<td align="right">32.32851</td>
+</tr>
+<tr class="odd">
+<td align="left">AGO</td>
+<td align="left">Angola</td>
+<td align="left">Africa</td>
+<td align="center">7.379</td>
+<td align="right">32.98483</td>
+</tr>
+<tr class="even">
+<td align="left">ALB</td>
+<td align="left">Albania</td>
+<td align="left">Europe</td>
+<td align="center">6.186</td>
+<td align="right">62.25437</td>
+</tr>
+<tr class="odd">
+<td align="left">ARE</td>
+<td align="left">United Arab Emirates</td>
+<td align="left">Middle East</td>
+<td align="center">6.928</td>
+<td align="right">52.24322</td>
+</tr>
+<tr class="even">
+<td align="left">ARG</td>
+<td align="left">Argentina</td>
+<td align="left">The Americas</td>
+<td align="center">3.109</td>
+<td align="right">65.21554</td>
+</tr>
+<tr class="odd">
+<td align="left">ARM</td>
+<td align="left">Armenia</td>
+<td align="left">Asia</td>
+<td align="center">4.550</td>
+<td align="right">65.86346</td>
+</tr>
+<tr class="even">
+<td align="left">ATG</td>
+<td align="left">Antigua and Barbuda</td>
+<td align="left">The Americas</td>
+<td align="center">4.425</td>
+<td align="right">61.78273</td>
+</tr>
+<tr class="odd">
+<td align="left">AUS</td>
+<td align="left">Australia</td>
+<td align="left">Oceania</td>
+<td align="center">3.453</td>
+<td align="right">70.81707</td>
+</tr>
+<tr class="even">
+<td align="left">AUT</td>
+<td align="left">Austria</td>
+<td align="left">Europe</td>
+<td align="center">2.690</td>
+<td align="right">68.58561</td>
+</tr>
+<tr class="odd">
+<td align="left">AZE</td>
+<td align="left">Azerbaijan</td>
+<td align="left">Asia</td>
+<td align="center">5.571</td>
+<td align="right">60.83624</td>
+</tr>
+<tr class="even">
+<td align="left">BDI</td>
+<td align="left">Burundi</td>
+<td align="left">Africa</td>
+<td align="center">6.953</td>
+<td align="right">41.23605</td>
+</tr>
+<tr class="odd">
+<td align="left">BEL</td>
+<td align="left">Belgium</td>
+<td align="left">Europe</td>
+<td align="center">2.540</td>
+<td align="right">69.70195</td>
+</tr>
+<tr class="even">
+<td align="left">BEN</td>
+<td align="left">Benin</td>
+<td align="left">Africa</td>
+<td align="center">6.282</td>
+<td align="right">37.27827</td>
+</tr>
+<tr class="odd">
+<td align="left">BFA</td>
+<td align="left">Burkina Faso</td>
+<td align="left">Africa</td>
+<td align="center">6.291</td>
+<td align="right">34.47790</td>
+</tr>
+<tr class="even">
+<td align="left">BGD</td>
+<td align="left">Bangladesh</td>
+<td align="left">Asia</td>
+<td align="center">6.725</td>
+<td align="right">45.82932</td>
+</tr>
+<tr class="odd">
+<td align="left">BGR</td>
+<td align="left">Bulgaria</td>
+<td align="left">Europe</td>
+<td align="center">2.310</td>
+<td align="right">69.24756</td>
+</tr>
+<tr class="even">
+<td align="left">BHR</td>
+<td align="left">Bahrain</td>
+<td align="left">Middle East</td>
+<td align="center">7.090</td>
+<td align="right">52.08937</td>
+</tr>
+<tr class="odd">
+<td align="left">BHS</td>
+<td align="left">Bahamas, The</td>
+<td align="left">The Americas</td>
+<td align="center">4.495</td>
+<td align="right">62.72905</td>
+</tr>
+<tr class="even">
+<td align="left">BIH</td>
+<td align="left">Bosnia and Herzegovina</td>
+<td align="left">Europe</td>
+<td align="center">3.770</td>
+<td align="right">60.27622</td>
+</tr>
+<tr class="odd">
+<td align="left">BLR</td>
+<td align="left">Belarus</td>
+<td align="left">Europe</td>
+<td align="center">2.670</td>
+<td align="right">67.70810</td>
+</tr>
+<tr class="even">
+<td align="left">BLZ</td>
+<td align="left">Belize</td>
+<td align="left">The Americas</td>
+<td align="center">6.500</td>
+<td align="right">59.96137</td>
+</tr>
+<tr class="odd">
+<td align="left">BOL</td>
+<td align="left">Bolivia</td>
+<td align="left">The Americas</td>
+<td align="center">6.700</td>
+<td align="right">42.11832</td>
+</tr>
+<tr class="even">
+<td align="left">BRA</td>
+<td align="left">Brazil</td>
+<td align="left">The Americas</td>
+<td align="center">6.210</td>
+<td align="right">54.20546</td>
+</tr>
+<tr class="odd">
+<td align="left">BRB</td>
+<td align="left">Barbados</td>
+<td align="left">The Americas</td>
+<td align="center">4.333</td>
+<td align="right">60.73805</td>
+</tr>
+<tr class="even">
+<td align="left">BRN</td>
+<td align="left">Brunei Darussalam</td>
+<td align="left">Asia</td>
+<td align="center">6.487</td>
+<td align="right">62.50037</td>
+</tr>
+<tr class="odd">
+<td align="left">BTN</td>
+<td align="left">Bhutan</td>
+<td align="left">Asia</td>
+<td align="center">6.670</td>
+<td align="right">32.35937</td>
+</tr>
+<tr class="even">
+<td align="left">BWA</td>
+<td align="left">Botswana</td>
+<td align="left">Africa</td>
+<td align="center">6.615</td>
+<td align="right">50.54773</td>
+</tr>
+<tr class="odd">
+<td align="left">CAF</td>
+<td align="left">Central African Republic</td>
+<td align="left">Africa</td>
+<td align="center">5.840</td>
+<td align="right">36.48263</td>
+</tr>
+<tr class="even">
+<td align="left">CAN</td>
+<td align="left">Canada</td>
+<td align="left">The Americas</td>
+<td align="center">3.811</td>
+<td align="right">71.13317</td>
+</tr>
+<tr class="odd">
+<td align="left">CHE</td>
+<td align="left">Switzerland</td>
+<td align="left">Europe</td>
+<td align="center">2.440</td>
+<td align="right">71.31341</td>
+</tr>
+<tr class="even">
+<td align="left">CHL</td>
+<td align="left">Chile</td>
+<td align="left">The Americas</td>
+<td align="center">5.113</td>
+<td align="right">57.45829</td>
+</tr>
+<tr class="odd">
+<td align="left">CHN</td>
+<td align="left">China</td>
+<td align="left">Asia</td>
+<td align="center">5.758</td>
+<td align="right">43.46580</td>
+</tr>
+<tr class="even">
+<td align="left">CIV</td>
+<td align="left">Cote d’Ivoire</td>
+<td align="left">Africa</td>
+<td align="center">7.351</td>
+<td align="right">36.87241</td>
+</tr>
+<tr class="odd">
+<td align="left">CMR</td>
+<td align="left">Cameroon</td>
+<td align="left">Africa</td>
+<td align="center">5.647</td>
+<td align="right">41.52376</td>
+</tr>
+<tr class="even">
+<td align="left">COD</td>
+<td align="left">Congo, Dem. Rep.</td>
+<td align="left">Africa</td>
+<td align="center">6.001</td>
+<td align="right">41.01805</td>
+</tr>
+<tr class="odd">
+<td align="left">COG</td>
+<td align="left">Congo, Rep.</td>
+<td align="left">Africa</td>
+<td align="center">5.880</td>
+<td align="right">48.58163</td>
+</tr>
+<tr class="even">
+<td align="left">COL</td>
+<td align="left">Colombia</td>
+<td align="left">The Americas</td>
+<td align="center">6.807</td>
+<td align="right">56.71676</td>
+</tr>
+<tr class="odd">
+<td align="left">COM</td>
+<td align="left">Comoros</td>
+<td align="left">Africa</td>
+<td align="center">6.792</td>
+<td align="right">41.44244</td>
+</tr>
+<tr class="even">
+<td align="left">CPV</td>
+<td align="left">Cabo Verde</td>
+<td align="left">Africa</td>
+<td align="center">6.885</td>
+<td align="right">48.85641</td>
+</tr>
+<tr class="odd">
+<td align="left">CRI</td>
+<td align="left">Costa Rica</td>
+<td align="left">The Americas</td>
+<td align="center">6.451</td>
+<td align="right">60.57620</td>
+</tr>
+<tr class="even">
+<td align="left">CUB</td>
+<td align="left">Cuba</td>
+<td align="left">The Americas</td>
+<td align="center">4.182</td>
+<td align="right">63.90466</td>
+</tr>
+<tr class="odd">
+<td align="left">CYP</td>
+<td align="left">Cyprus</td>
+<td align="left">Europe</td>
+<td align="center">3.500</td>
+<td align="right">69.59393</td>
+</tr>
+<tr class="even">
+<td align="left">CZE</td>
+<td align="left">Czech Republic</td>
+<td align="left">Europe</td>
+<td align="center">2.090</td>
+<td align="right">70.34878</td>
+</tr>
+<tr class="odd">
+<td align="left">DEU</td>
+<td align="left">Germany</td>
+<td align="left">Europe</td>
+<td align="center">2.370</td>
+<td align="right">69.31295</td>
+</tr>
+<tr class="even">
+<td align="left">DJI</td>
+<td align="left">Djibouti</td>
+<td align="left">Africa</td>
+<td align="center">6.461</td>
+<td align="right">44.02127</td>
+</tr>
+<tr class="odd">
+<td align="left">DNK</td>
+<td align="left">Denmark</td>
+<td align="left">Europe</td>
+<td align="center">2.570</td>
+<td align="right">72.17659</td>
+</tr>
+<tr class="even">
+<td align="left">DOM</td>
+<td align="left">Dominican Republic</td>
+<td align="left">The Americas</td>
+<td align="center">7.555</td>
+<td align="right">51.84527</td>
+</tr>
+<tr class="odd">
+<td align="left">DZA</td>
+<td align="left">Algeria</td>
+<td align="left">Africa</td>
+<td align="center">7.524</td>
+<td align="right">46.13512</td>
+</tr>
+<tr class="even">
+<td align="left">ECU</td>
+<td align="left">Ecuador</td>
+<td align="left">The Americas</td>
+<td align="center">6.721</td>
+<td align="right">53.21500</td>
+</tr>
+<tr class="odd">
+<td align="left">EGY</td>
+<td align="left">Egypt, Arab Rep.</td>
+<td align="left">Africa</td>
+<td align="center">6.630</td>
+<td align="right">48.01371</td>
+</tr>
+<tr class="even">
+<td align="left">ERI</td>
+<td align="left">Eritrea</td>
+<td align="left">Africa</td>
+<td align="center">6.899</td>
+<td align="right">37.36290</td>
+</tr>
+<tr class="odd">
+<td align="left">ESP</td>
+<td align="left">Spain</td>
+<td align="left">Europe</td>
+<td align="center">2.860</td>
+<td align="right">69.10927</td>
+</tr>
+<tr class="even">
+<td align="left">EST</td>
+<td align="left">Estonia</td>
+<td align="left">Europe</td>
+<td align="center">1.980</td>
+<td align="right">67.90598</td>
+</tr>
+<tr class="odd">
+<td align="left">ETH</td>
+<td align="left">Ethiopia</td>
+<td align="left">Africa</td>
+<td align="center">6.880</td>
+<td align="right">38.40571</td>
+</tr>
+<tr class="even">
+<td align="left">FIN</td>
+<td align="left">Finland</td>
+<td align="left">Europe</td>
+<td align="center">2.720</td>
+<td align="right">68.81976</td>
+</tr>
+<tr class="odd">
+<td align="left">FJI</td>
+<td align="left">Fiji</td>
+<td align="left">Oceania</td>
+<td align="center">6.461</td>
+<td align="right">55.95849</td>
+</tr>
+<tr class="even">
+<td align="left">FRA</td>
+<td align="left">France</td>
+<td align="left">Europe</td>
+<td align="center">2.850</td>
+<td align="right">69.86829</td>
+</tr>
+<tr class="odd">
+<td align="left">FSM</td>
+<td align="left">Micronesia, Fed. Sts.</td>
+<td align="left">Oceania</td>
+<td align="center">6.934</td>
+<td align="right">57.58659</td>
+</tr>
+<tr class="even">
+<td align="left">GAB</td>
+<td align="left">Gabon</td>
+<td align="left">Africa</td>
+<td align="center">4.384</td>
+<td align="right">39.57012</td>
+</tr>
+<tr class="odd">
+<td align="left">GBR</td>
+<td align="left">United Kingdom</td>
+<td align="left">Europe</td>
+<td align="center">2.690</td>
+<td align="right">71.12683</td>
+</tr>
+<tr class="even">
+<td align="left">GEO</td>
+<td align="left">Georgia</td>
+<td align="left">Asia</td>
+<td align="center">2.964</td>
+<td align="right">63.43185</td>
+</tr>
+<tr class="odd">
+<td align="left">GHA</td>
+<td align="left">Ghana</td>
+<td align="left">Africa</td>
+<td align="center">6.749</td>
+<td align="right">45.83146</td>
+</tr>
+<tr class="even">
+<td align="left">GIN</td>
+<td align="left">Guinea</td>
+<td align="left">Africa</td>
+<td align="center">6.114</td>
+<td align="right">34.88639</td>
+</tr>
+<tr class="odd">
+<td align="left">GMB</td>
+<td align="left">Gambia, The</td>
+<td align="left">Africa</td>
+<td align="center">5.573</td>
+<td align="right">32.04222</td>
+</tr>
+<tr class="even">
+<td align="left">GNB</td>
+<td align="left">Guinea-Bissau</td>
+<td align="left">Africa</td>
+<td align="center">5.921</td>
+<td align="right">37.84044</td>
+</tr>
+<tr class="odd">
+<td align="left">GNQ</td>
+<td align="left">Equatorial Guinea</td>
+<td align="left">Africa</td>
+<td align="center">5.505</td>
+<td align="right">36.73305</td>
+</tr>
+<tr class="even">
+<td align="left">GRC</td>
+<td align="left">Greece</td>
+<td align="left">Europe</td>
+<td align="center">2.230</td>
+<td align="right">68.16390</td>
+</tr>
+<tr class="odd">
+<td align="left">GRD</td>
+<td align="left">Grenada</td>
+<td align="left">The Americas</td>
+<td align="center">6.743</td>
+<td align="right">59.81593</td>
+</tr>
+<tr class="even">
+<td align="left">GTM</td>
+<td align="left">Guatemala</td>
+<td align="left">The Americas</td>
+<td align="center">6.534</td>
+<td align="right">45.53163</td>
+</tr>
+<tr class="odd">
+<td align="left">GUM</td>
+<td align="left">Guam</td>
+<td align="left">Oceania</td>
+<td align="center">6.052</td>
+<td align="right">61.22634</td>
+</tr>
+<tr class="even">
+<td align="left">GUY</td>
+<td align="left">Guyana</td>
+<td align="left">The Americas</td>
+<td align="center">5.754</td>
+<td align="right">60.27873</td>
+</tr>
+<tr class="odd">
+<td align="left">HKG</td>
+<td align="left">Hong Kong SAR, China</td>
+<td align="left">Asia</td>
+<td align="center">5.162</td>
+<td align="right">66.99971</td>
+</tr>
+<tr class="even">
+<td align="left">HND</td>
+<td align="left">Honduras</td>
+<td align="left">The Americas</td>
+<td align="center">7.458</td>
+<td align="right">46.28832</td>
+</tr>
+<tr class="odd">
+<td align="left">HRV</td>
+<td align="left">Croatia</td>
+<td align="left">Europe</td>
+<td align="center">2.332</td>
+<td align="right">64.60866</td>
+</tr>
+<tr class="even">
+<td align="left">HTI</td>
+<td align="left">Haiti</td>
+<td align="left">The Americas</td>
+<td align="center">6.324</td>
+<td align="right">42.10010</td>
+</tr>
+<tr class="odd">
+<td align="left">HUN</td>
+<td align="left">Hungary</td>
+<td align="left">Europe</td>
+<td align="center">2.020</td>
+<td align="right">68.00317</td>
+</tr>
+<tr class="even">
+<td align="left">IDN</td>
+<td align="left">Indonesia</td>
+<td align="left">Asia</td>
+<td align="center">5.666</td>
+<td align="right">48.64032</td>
+</tr>
+<tr class="odd">
+<td align="left">IND</td>
+<td align="left">India</td>
+<td align="left">Asia</td>
+<td align="center">5.906</td>
+<td align="right">41.17195</td>
+</tr>
+<tr class="even">
+<td align="left">IRL</td>
+<td align="left">Ireland</td>
+<td align="left">Europe</td>
+<td align="center">3.780</td>
+<td align="right">69.69176</td>
+</tr>
+<tr class="odd">
+<td align="left">IRN</td>
+<td align="left">Iran, Islamic Rep.</td>
+<td align="left">Middle East</td>
+<td align="center">6.927</td>
+<td align="right">44.94551</td>
+</tr>
+<tr class="even">
+<td align="left">IRQ</td>
+<td align="left">Iraq</td>
+<td align="left">Middle East</td>
+<td align="center">6.252</td>
+<td align="right">48.03068</td>
+</tr>
+<tr class="odd">
+<td align="left">ISL</td>
+<td align="left">Iceland</td>
+<td align="left">Europe</td>
+<td align="center">4.290</td>
+<td align="right">73.42866</td>
+</tr>
+<tr class="even">
+<td align="left">ITA</td>
+<td align="left">Italy</td>
+<td align="left">Europe</td>
+<td align="center">2.370</td>
+<td align="right">69.12390</td>
+</tr>
+<tr class="odd">
+<td align="left">JAM</td>
+<td align="left">Jamaica</td>
+<td align="left">The Americas</td>
+<td align="center">5.419</td>
+<td align="right">64.19183</td>
+</tr>
+<tr class="even">
+<td align="left">JOR</td>
+<td align="left">Jordan</td>
+<td align="left">Middle East</td>
+<td align="center">7.687</td>
+<td align="right">52.68527</td>
+</tr>
+<tr class="odd">
+<td align="left">JPN</td>
+<td align="left">Japan</td>
+<td align="left">Asia</td>
+<td align="center">2.001</td>
+<td align="right">67.66610</td>
+</tr>
+<tr class="even">
+<td align="left">KAZ</td>
+<td align="left">Kazakhstan</td>
+<td align="left">Asia</td>
+<td align="center">4.563</td>
+<td align="right">58.36759</td>
+</tr>
+<tr class="odd">
+<td align="left">KEN</td>
+<td align="left">Kenya</td>
+<td align="left">Africa</td>
+<td align="center">7.946</td>
+<td align="right">46.36241</td>
+</tr>
+<tr class="even">
+<td align="left">KGZ</td>
+<td align="left">Kyrgyz Republic</td>
+<td align="left">Asia</td>
+<td align="center">5.166</td>
+<td align="right">56.12807</td>
+</tr>
+<tr class="odd">
+<td align="left">KHM</td>
+<td align="left">Cambodia</td>
+<td align="left">Asia</td>
+<td align="center">6.967</td>
+<td align="right">41.23202</td>
+</tr>
+<tr class="even">
+<td align="left">KIR</td>
+<td align="left">Kiribati</td>
+<td align="left">Oceania</td>
+<td align="center">6.788</td>
+<td align="right">49.21598</td>
+</tr>
+<tr class="odd">
+<td align="left">KOR</td>
+<td align="left">Korea, Rep.</td>
+<td align="left">Asia</td>
+<td align="center">6.155</td>
+<td align="right">53.00132</td>
+</tr>
+<tr class="even">
+<td align="left">KWT</td>
+<td align="left">Kuwait</td>
+<td align="left">Middle East</td>
+<td align="center">7.251</td>
+<td align="right">60.34795</td>
+</tr>
+<tr class="odd">
+<td align="left">LAO</td>
+<td align="left">Lao PDR</td>
+<td align="left">Asia</td>
+<td align="center">5.961</td>
+<td align="right">43.20446</td>
+</tr>
+<tr class="even">
+<td align="left">LBN</td>
+<td align="left">Lebanon</td>
+<td align="left">Middle East</td>
+<td align="center">5.739</td>
+<td align="right">63.28012</td>
+</tr>
+<tr class="odd">
+<td align="left">LBR</td>
+<td align="left">Liberia</td>
+<td align="left">Africa</td>
+<td align="center">6.406</td>
+<td align="right">34.78317</td>
+</tr>
+<tr class="even">
+<td align="left">LBY</td>
+<td align="left">Libya</td>
+<td align="left">Africa</td>
+<td align="center">7.202</td>
+<td align="right">42.64120</td>
+</tr>
+<tr class="odd">
+<td align="left">LCA</td>
+<td align="left">St. Lucia</td>
+<td align="left">The Americas</td>
+<td align="center">6.967</td>
+<td align="right">57.30376</td>
+</tr>
+<tr class="even">
+<td align="left">LKA</td>
+<td align="left">Sri Lanka</td>
+<td align="left">Asia</td>
+<td align="center">5.541</td>
+<td align="right">59.74715</td>
+</tr>
+<tr class="odd">
+<td align="left">LSO</td>
+<td align="left">Lesotho</td>
+<td align="left">Africa</td>
+<td align="center">5.839</td>
+<td align="right">46.51071</td>
+</tr>
+<tr class="even">
+<td align="left">LTU</td>
+<td align="left">Lithuania</td>
+<td align="left">Europe</td>
+<td align="center">2.560</td>
+<td align="right">69.84732</td>
+</tr>
+<tr class="odd">
+<td align="left">LUX</td>
+<td align="left">Luxembourg</td>
+<td align="left">Europe</td>
+<td align="center">2.290</td>
+<td align="right">68.44639</td>
+</tr>
+<tr class="even">
+<td align="left">LVA</td>
+<td align="left">Latvia</td>
+<td align="left">Europe</td>
+<td align="center">1.940</td>
+<td align="right">69.78683</td>
+</tr>
+<tr class="odd">
+<td align="left">MAC</td>
+<td align="left">Macao SAR, China</td>
+<td align="left">Asia</td>
+<td align="center">4.945</td>
+<td align="right">64.66093</td>
+</tr>
+<tr class="even">
+<td align="left">MAR</td>
+<td align="left">Morocco</td>
+<td align="left">Africa</td>
+<td align="center">7.065</td>
+<td align="right">48.44663</td>
+</tr>
+<tr class="odd">
+<td align="left">MDA</td>
+<td align="left">Moldova</td>
+<td align="left">Europe</td>
+<td align="center">3.328</td>
+<td align="right">61.81278</td>
+</tr>
+<tr class="even">
+<td align="left">MDG</td>
+<td align="left">Madagascar</td>
+<td align="left">Africa</td>
+<td align="center">7.300</td>
+<td align="right">39.97468</td>
+</tr>
+<tr class="odd">
+<td align="left">MDV</td>
+<td align="left">Maldives</td>
+<td align="left">Asia</td>
+<td align="center">7.021</td>
+<td align="right">37.26863</td>
+</tr>
+<tr class="even">
+<td align="left">MEX</td>
+<td align="left">Mexico</td>
+<td align="left">The Americas</td>
+<td align="center">6.768</td>
+<td align="right">57.06563</td>
+</tr>
+<tr class="odd">
+<td align="left">MKD</td>
+<td align="left">Macedonia, FYR</td>
+<td align="left">Europe</td>
+<td align="center">3.842</td>
+<td align="right">60.62280</td>
+</tr>
+<tr class="even">
+<td align="left">MLI</td>
+<td align="left">Mali</td>
+<td align="left">Africa</td>
+<td align="center">6.967</td>
+<td align="right">28.21161</td>
+</tr>
+<tr class="odd">
+<td align="left">MLT</td>
+<td align="left">Malta</td>
+<td align="left">Europe</td>
+<td align="center">3.620</td>
+<td align="right">67.60178</td>
+</tr>
+<tr class="even">
+<td align="left">MMR</td>
+<td align="left">Myanmar</td>
+<td align="left">Asia</td>
+<td align="center">6.051</td>
+<td align="right">42.73639</td>
+</tr>
+<tr class="odd">
+<td align="left">MNE</td>
+<td align="left">Montenegro</td>
+<td align="left">Europe</td>
+<td align="center">3.521</td>
+<td align="right">63.70561</td>
+</tr>
+<tr class="even">
+<td align="left">MNG</td>
+<td align="left">Mongolia</td>
+<td align="left">Asia</td>
+<td align="center">6.953</td>
+<td align="right">48.36880</td>
+</tr>
+<tr class="odd">
+<td align="left">MOZ</td>
+<td align="left">Mozambique</td>
+<td align="left">Africa</td>
+<td align="center">6.600</td>
+<td align="right">35.00371</td>
+</tr>
+<tr class="even">
+<td align="left">MRT</td>
+<td align="left">Mauritania</td>
+<td align="left">Africa</td>
+<td align="center">6.775</td>
+<td align="right">43.48310</td>
+</tr>
+<tr class="odd">
+<td align="left">MUS</td>
+<td align="left">Mauritius</td>
+<td align="left">Africa</td>
+<td align="center">6.167</td>
+<td align="right">58.74522</td>
+</tr>
+<tr class="even">
+<td align="left">MWI</td>
+<td align="left">Malawi</td>
+<td align="left">Africa</td>
+<td align="center">6.940</td>
+<td align="right">37.77363</td>
+</tr>
+<tr class="odd">
+<td align="left">MYS</td>
+<td align="left">Malaysia</td>
+<td align="left">Asia</td>
+<td align="center">6.194</td>
+<td align="right">59.47534</td>
+</tr>
+<tr class="even">
+<td align="left">NAM</td>
+<td align="left">Namibia</td>
+<td align="left">Africa</td>
+<td align="center">6.150</td>
+<td align="right">46.88039</td>
+</tr>
+<tr class="odd">
+<td align="left">NCL</td>
+<td align="left">New Caledonia</td>
+<td align="left">Oceania</td>
+<td align="center">6.278</td>
+<td align="right">58.63902</td>
+</tr>
+<tr class="even">
+<td align="left">NER</td>
+<td align="left">Niger</td>
+<td align="left">Africa</td>
+<td align="center">7.407</td>
+<td align="right">35.51505</td>
+</tr>
+<tr class="odd">
+<td align="left">NGA</td>
+<td align="left">Nigeria</td>
+<td align="left">Africa</td>
+<td align="center">6.354</td>
+<td align="right">37.18295</td>
+</tr>
+<tr class="even">
+<td align="left">NIC</td>
+<td align="left">Nicaragua</td>
+<td align="left">The Americas</td>
+<td align="center">7.336</td>
+<td align="right">46.99883</td>
+</tr>
+<tr class="odd">
+<td align="left">NLD</td>
+<td align="left">Netherlands</td>
+<td align="left">Europe</td>
+<td align="center">3.120</td>
+<td align="right">73.39268</td>
+</tr>
+<tr class="even">
+<td align="left">NOR</td>
+<td align="left">Norway</td>
+<td align="left">Europe</td>
+<td align="center">2.850</td>
+<td align="right">73.54976</td>
+</tr>
+<tr class="odd">
+<td align="left">NPL</td>
+<td align="left">Nepal</td>
+<td align="left">Asia</td>
+<td align="center">5.959</td>
+<td align="right">35.17083</td>
+</tr>
+<tr class="even">
+<td align="left">NZL</td>
+<td align="left">New Zealand</td>
+<td align="left">Oceania</td>
+<td align="center">4.129</td>
+<td align="right">71.23659</td>
+</tr>
+<tr class="odd">
+<td align="left">OMN</td>
+<td align="left">Oman</td>
+<td align="left">Middle East</td>
+<td align="center">7.247</td>
+<td align="right">42.66707</td>
+</tr>
+<tr class="even">
+<td align="left">PAK</td>
+<td align="left">Pakistan</td>
+<td align="left">Asia</td>
+<td align="center">6.600</td>
+<td align="right">45.29046</td>
+</tr>
+<tr class="odd">
+<td align="left">PAN</td>
+<td align="left">Panama</td>
+<td align="left">The Americas</td>
+<td align="center">5.870</td>
+<td align="right">60.88171</td>
+</tr>
+<tr class="even">
+<td align="left">PER</td>
+<td align="left">Peru</td>
+<td align="left">The Americas</td>
+<td align="center">6.971</td>
+<td align="right">47.69159</td>
+</tr>
+<tr class="odd">
+<td align="left">PHL</td>
+<td align="left">Philippines</td>
+<td align="left">Asia</td>
+<td align="center">7.148</td>
+<td align="right">57.81193</td>
+</tr>
+<tr class="even">
+<td align="left">PNG</td>
+<td align="left">Papua New Guinea</td>
+<td align="left">Oceania</td>
+<td align="center">6.275</td>
+<td align="right">38.46224</td>
+</tr>
+<tr class="odd">
+<td align="left">POL</td>
+<td align="left">Poland</td>
+<td align="left">Europe</td>
+<td align="center">2.980</td>
+<td align="right">67.68049</td>
+</tr>
+<tr class="even">
+<td align="left">PRI</td>
+<td align="left">Puerto Rico</td>
+<td align="left">The Americas</td>
+<td align="center">4.657</td>
+<td align="right">68.71961</td>
+</tr>
+<tr class="odd">
+<td align="left">PRT</td>
+<td align="left">Portugal</td>
+<td align="left">Europe</td>
+<td align="center">3.160</td>
+<td align="right">62.80893</td>
+</tr>
+<tr class="even">
+<td align="left">PRY</td>
+<td align="left">Paraguay</td>
+<td align="left">The Americas</td>
+<td align="center">6.500</td>
+<td align="right">63.79371</td>
+</tr>
+<tr class="odd">
+<td align="left">PYF</td>
+<td align="left">French Polynesia</td>
+<td align="left">Oceania</td>
+<td align="center">5.658</td>
+<td align="right">56.35705</td>
+</tr>
+<tr class="even">
+<td align="left">QAT</td>
+<td align="left">Qatar</td>
+<td align="left">Middle East</td>
+<td align="center">6.971</td>
+<td align="right">61.20607</td>
+</tr>
+<tr class="odd">
+<td align="left">ROU</td>
+<td align="left">Romania</td>
+<td align="left">Europe</td>
+<td align="center">2.340</td>
+<td align="right">65.64244</td>
+</tr>
+<tr class="even">
+<td align="left">RUS</td>
+<td align="left">Russian Federation</td>
+<td align="left">Europe</td>
+<td align="center">2.520</td>
+<td align="right">66.05529</td>
+</tr>
+<tr class="odd">
+<td align="left">RWA</td>
+<td align="left">Rwanda</td>
+<td align="left">Africa</td>
+<td align="center">8.187</td>
+<td align="right">42.24929</td>
+</tr>
+<tr class="even">
+<td align="left">SAU</td>
+<td align="left">Saudi Arabia</td>
+<td align="left">Middle East</td>
+<td align="center">7.216</td>
+<td align="right">45.66627</td>
+</tr>
+<tr class="odd">
+<td align="left">SDN</td>
+<td align="left">Sudan</td>
+<td align="left">Africa</td>
+<td align="center">6.691</td>
+<td align="right">48.18763</td>
+</tr>
+<tr class="even">
+<td align="left">SEN</td>
+<td align="left">Senegal</td>
+<td align="left">Africa</td>
+<td align="center">6.951</td>
+<td align="right">38.20600</td>
+</tr>
+<tr class="odd">
+<td align="left">SGP</td>
+<td align="left">Singapore</td>
+<td align="left">Asia</td>
+<td align="center">5.454</td>
+<td align="right">65.65983</td>
+</tr>
+<tr class="even">
+<td align="left">SLB</td>
+<td align="left">Solomon Islands</td>
+<td align="left">Oceania</td>
+<td align="center">6.388</td>
+<td align="right">49.38171</td>
+</tr>
+<tr class="odd">
+<td align="left">SLE</td>
+<td align="left">Sierra Leone</td>
+<td align="left">Africa</td>
+<td align="center">5.970</td>
+<td align="right">30.33154</td>
+</tr>
+<tr class="even">
+<td align="left">SLV</td>
+<td align="left">El Salvador</td>
+<td align="left">The Americas</td>
+<td align="center">6.674</td>
+<td align="right">49.94793</td>
+</tr>
+<tr class="odd">
+<td align="left">SOM</td>
+<td align="left">Somalia</td>
+<td align="left">Africa</td>
+<td align="center">7.250</td>
+<td align="right">36.96588</td>
+</tr>
+<tr class="even">
+<td align="left">SSD</td>
+<td align="left">South Sudan</td>
+<td align="left">Africa</td>
+<td align="center">6.721</td>
+<td align="right">31.67671</td>
+</tr>
+<tr class="odd">
+<td align="left">STP</td>
+<td align="left">Sao Tome and Principe</td>
+<td align="left">Africa</td>
+<td align="center">6.242</td>
+<td align="right">50.45137</td>
+</tr>
+<tr class="even">
+<td align="left">SUR</td>
+<td align="left">Suriname</td>
+<td align="left">The Americas</td>
+<td align="center">6.608</td>
+<td align="right">59.68012</td>
+</tr>
+<tr class="odd">
+<td align="left">SVK</td>
+<td align="left">Slovak Republic</td>
+<td align="left">Europe</td>
+<td align="center">3.040</td>
+<td align="right">69.97593</td>
+</tr>
+<tr class="even">
+<td align="left">SVN</td>
+<td align="left">Slovenia</td>
+<td align="left">Europe</td>
+<td align="center">2.324</td>
+<td align="right">68.97805</td>
+</tr>
+<tr class="odd">
+<td align="left">SWE</td>
+<td align="left">Sweden</td>
+<td align="left">Europe</td>
+<td align="center">2.170</td>
+<td align="right">73.00561</td>
+</tr>
+<tr class="even">
+<td align="left">SWZ</td>
+<td align="left">Swaziland</td>
+<td align="left">Africa</td>
+<td align="center">6.717</td>
+<td align="right">44.23378</td>
+</tr>
+<tr class="odd">
+<td align="left">SYR</td>
+<td align="left">Syrian Arab Republic</td>
+<td align="left">Middle East</td>
+<td align="center">7.467</td>
+<td align="right">52.76824</td>
+</tr>
+<tr class="even">
+<td align="left">TCD</td>
+<td align="left">Chad</td>
+<td align="left">Africa</td>
+<td align="center">6.250</td>
+<td align="right">38.01612</td>
+</tr>
+<tr class="odd">
+<td align="left">TGO</td>
+<td align="left">Togo</td>
+<td align="left">Africa</td>
+<td align="center">6.521</td>
+<td align="right">40.27283</td>
+</tr>
+<tr class="even">
+<td align="left">THA</td>
+<td align="left">Thailand</td>
+<td align="left">Asia</td>
+<td align="center">6.147</td>
+<td align="right">54.69932</td>
+</tr>
+<tr class="odd">
+<td align="left">TJK</td>
+<td align="left">Tajikistan</td>
+<td align="left">Asia</td>
+<td align="center">6.235</td>
+<td align="right">56.15354</td>
+</tr>
+<tr class="even">
+<td align="left">TKM</td>
+<td align="left">Turkmenistan</td>
+<td align="left">Asia</td>
+<td align="center">6.415</td>
+<td align="right">54.45868</td>
+</tr>
+<tr class="odd">
+<td align="left">TLS</td>
+<td align="left">Timor-Leste</td>
+<td align="left">Asia</td>
+<td align="center">6.373</td>
+<td align="right">33.72712</td>
+</tr>
+<tr class="even">
+<td align="left">TON</td>
+<td align="left">Tonga</td>
+<td align="left">Oceania</td>
+<td align="center">7.363</td>
+<td align="right">61.36454</td>
+</tr>
+<tr class="odd">
+<td align="left">TTO</td>
+<td align="left">Trinidad and Tobago</td>
+<td align="left">The Americas</td>
+<td align="center">5.264</td>
+<td align="right">62.65759</td>
+</tr>
+<tr class="even">
+<td align="left">TUN</td>
+<td align="left">Tunisia</td>
+<td align="left">Africa</td>
+<td align="center">7.043</td>
+<td align="right">42.00976</td>
+</tr>
+<tr class="odd">
+<td align="left">TUR</td>
+<td align="left">Turkey</td>
+<td align="left">Europe</td>
+<td align="center">6.303</td>
+<td align="right">45.38441</td>
+</tr>
+<tr class="even">
+<td align="left">TZA</td>
+<td align="left">Tanzania</td>
+<td align="left">Africa</td>
+<td align="center">6.806</td>
+<td align="right">43.65388</td>
+</tr>
+<tr class="odd">
+<td align="left">UGA</td>
+<td align="left">Uganda</td>
+<td align="left">Africa</td>
+<td align="center">6.999</td>
+<td align="right">43.98356</td>
+</tr>
+<tr class="even">
+<td align="left">UKR</td>
+<td align="left">Ukraine</td>
+<td align="left">Europe</td>
+<td align="center">2.240</td>
+<td align="right">68.29954</td>
+</tr>
+<tr class="odd">
+<td align="left">URY</td>
+<td align="left">Uruguay</td>
+<td align="left">The Americas</td>
+<td align="center">2.880</td>
+<td align="right">67.89639</td>
+</tr>
+<tr class="even">
+<td align="left">USA</td>
+<td align="left">United States</td>
+<td align="left">The Americas</td>
+<td align="center">3.654</td>
+<td align="right">69.77073</td>
+</tr>
+<tr class="odd">
+<td align="left">UZB</td>
+<td align="left">Uzbekistan</td>
+<td align="left">Asia</td>
+<td align="center">6.707</td>
+<td align="right">58.88554</td>
+</tr>
+<tr class="even">
+<td align="left">VCT</td>
+<td align="left">St. Vincent and the Grenadines</td>
+<td align="left">The Americas</td>
+<td align="center">7.224</td>
+<td align="right">57.72388</td>
+</tr>
+<tr class="odd">
+<td align="left">VEN</td>
+<td align="left">Venezuela, RB</td>
+<td align="left">The Americas</td>
+<td align="center">6.616</td>
+<td align="right">59.28512</td>
+</tr>
+<tr class="even">
+<td align="left">VIR</td>
+<td align="left">Virgin Islands (U.S.)</td>
+<td align="left">The Americas</td>
+<td align="center">5.615</td>
+<td align="right">63.73022</td>
+</tr>
+<tr class="odd">
+<td align="left">VNM</td>
+<td align="left">Vietnam</td>
+<td align="left">Asia</td>
+<td align="center">6.348</td>
+<td align="right">59.06702</td>
+</tr>
+<tr class="even">
+<td align="left">VUT</td>
+<td align="left">Vanuatu</td>
+<td align="left">Oceania</td>
+<td align="center">7.197</td>
+<td align="right">46.48749</td>
+</tr>
+<tr class="odd">
+<td align="left">WSM</td>
+<td align="left">Samoa</td>
+<td align="left">Oceania</td>
+<td align="center">7.651</td>
+<td align="right">49.96951</td>
+</tr>
+<tr class="even">
+<td align="left">YEM</td>
+<td align="left">Yemen, Rep.</td>
+<td align="left">Middle East</td>
+<td align="center">7.380</td>
+<td align="right">34.36380</td>
+</tr>
+<tr class="odd">
+<td align="left">ZAF</td>
+<td align="left">South Africa</td>
+<td align="left">Africa</td>
+<td align="center">6.173</td>
+<td align="right">49.03629</td>
+</tr>
+<tr class="even">
+<td align="left">ZMB</td>
+<td align="left">Zambia</td>
+<td align="left">Africa</td>
+<td align="center">7.018</td>
+<td align="right">45.10980</td>
+</tr>
+<tr class="odd">
+<td align="left">ZWE</td>
+<td align="left">Zimbabwe</td>
+<td align="left">Africa</td>
+<td align="center">7.158</td>
+<td align="right">51.54246</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="summary" class="section level2">
+<h2>SUMMARY</h2>
+<p>The Above is a Knitr Table containing data based on “Life Expectancy vs Fertility Rate Analysis” for the Year 1960 for all countries.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
